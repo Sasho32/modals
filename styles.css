@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root {
+    --status-fs: 1.6rem;
+    --secondary-fs: 1.1rem;
+
+    --status-fs-m: 1.3rem;
+    --secondary-fs-m: 0.9rem;
+
+    --button-fs: 1.2rem;
+    --button-fs-m: 1rem;
+
+    --vertical-gap: 2rem;
+}
+
+body {
+    min-height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-block: 1rem;
+}
+
+body.same-size > section.info-box {
+    width: 650px;
+}
+
+section.info-box {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: var(--vertical-gap);
+    padding-block: var(--vertical-gap);
+    align-items: center;
+    padding-inline: 1rem;
+    border-radius: 1rem;
+}
+
+section.info-box > span.status {
+    font-size: var(--status-fs);
+    text-align: center;
+}
+
+section.info-box > span.status.red {
+    color: hsl(0, 100%, 40%);
+}
+section.info-box > span.status.green {
+    color: #19e194;
+}
+
+section.info-box > span.secondary {
+    font-size: var(--secondary-fs);
+    text-align: center;
+}
+
+section.info-box > button {
+    padding: 0.5rem 2.5rem;
+    background-color: orange;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 3.125rem;
+    font-weight: 600;
+}
+
+@media (width < 40em) {
+    body > section.info-box {
+        width: 85%;
+    }
+
+    body.same-size > section.info-box {
+        width: 85%;
+    }
+
+    section.info-box > span.status {
+        font-size: var(--status-fs-m);
+    }
+
+    section.info-box > span.secondary {
+        font-size: var(--secondary-fs-m);
+    }
+}
+/* 
+<section class="info-box">
+            <span class="status">Congratulations!</span>
+            <span class="secondary"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore, porro!</span
+            >
+            <button>Login</button>
+        </section> */
