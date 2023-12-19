@@ -15,47 +15,72 @@
         <script src="./index.js" defer></script>
     </head>
     <body>
-        <button>Change</button>
+        <button style="cursor: pointer; border: none; background-color: black; padding: 1rem 2rem; outline: none; color: #fff; border-radius: 1rem; font-weight: bold; font-size: 1rem;">FIXED SIZE</button>
+        <section class="info-box">
+            <span class="status red">404</span>
+            <span class="secondary"
+                >The requested URL was not found on this server.<br>That's all we know.</span
+            >
+        </section>
         <section class="info-box">
             <span class="status green">Congratulations!</span>
             <span class="secondary"
-                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore, porro!</span
+                >You have successfully confirmed your email address.</span
             >
             <button>Login</button>
         </section>
         <section class="info-box">
             <span class="status red">Warning!</span>
             <span class="secondary"
-                >An error occurred. Please, try to confirm your registration
+                >An error occurred.<br>Please, try to confirm your registration
                 again in a minute.</span
             >
         </section>
         <section class="info-box">
             <span class="status red">Warning!</span>
             <span class="secondary"
-                >Invalid verification link. If you copied it from the email,
-                check it and try again</span
+                >Invalid verification link.
+                <br>If you copied it from the email,
+                check it and try again.</span
             >
+        </section>
+        <section class="info-box">
+            <span class="status green">Congratulations!</span>
+            <!-- <span class="secondary">You have successfully registered in our platform. We'll send a confirmation link to your email address.</span> -->
+            <span class="secondary">
+                You have successfully registered in our platform.<br> 
+                We'll send a confirmation link to your email address.
+            </span>
         </section>
         <section class="info-box">
             <span class="status green">Congratulations!</span>
             <span class="secondary"
                 >You have successfully changed your password.</span
             >
+            <button>Login</button>
         </section>
         <section class="info-box">
-            <span class="status"
-                >Unfortunately your application was not approved...</span
+            <span class="status" style="font-size: 1.3rem;"
+                >Unfortunately your application was not approved.</span
             >
             <span class="secondary">You can delete your account.</span>
             <button>Delete</button>
         </section>
         <section class="info-box">
-            <span class="status">Insufficient rights to view this page.</span>
+            <span class="status" style="font-size: 1.3rem;">Insufficient rights to view this page.</span>
             <span class="secondary"
-                >Please contact your system administrator.</span
+                >Please, contact your system administrator.</span
             >
+        </section>
+        <section class="info-box">
+            <span class="status green">Username changed successfully!</span>
+            <span class="secondary"
+                >We'll send a confirmation link to the newly provided email address.</span
+            >
+        </section>
+        <section class="info-box">
+            <span class="loader"></span>
+            <span class="secondary">Your application is currently being processed...</span>
         </section>
     </body>
 </html>
